@@ -1,0 +1,20 @@
+{
+  "name": "gaied-prompt-pirates",
+  "version": "1.0.0",
+  "description": "## 📌 Table of Contents - [Introduction](#introduction) - [Demo](#demo) - [Inspiration](#inspiration) - [What It Does](#what-it-does) - [How We Built It](#how-we-built-it) - [Challenges We Faced](#challenges-we-faced) - [How to Run](#how-to-run) - [Tech Stack](#tech-stack) - [Team](#team)",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd code && cd server && source ./.venv/bin/activate/ && fastapi dev main.py",
+    "setup": "cd code && cd server && python3 -m venv .venv && chmod u+x ./.venv/bin/activate && source ./.venv/bin/activate && pip install -r requirements.txt && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewfx/gaied-prompt-pirates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewfx/gaied-prompt-pirates/issues"
+  },
+  "homepage": "https://github.com/ewfx/gaied-prompt-pirates#readme"
+}
