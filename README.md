@@ -31,7 +31,10 @@ This system classifies email content into specific request and sub-request types
 What inspired you to create this project? Describe the problem you're solving.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+✅ Automates Email Processing → Extracts loan request types, key attributes, and relevant details from emails & attachments.
+✅ Enhances Accuracy → Uses LLM-based classification to improve precision in sorting loan-related emails.
+✅ Speeds Up Response Time → Enables near-instant classification and forwarding to the right department.
+✅ Integrates Seamlessly → Connects with CRM & Loan Management Systems via API for structured data output.
 
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.
