@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 FargoLoanAssist AI – AI-enhanced email management for loan service teams.
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
