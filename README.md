@@ -96,6 +96,6 @@ Briefly outline the technologies, frameworks, and tools used in development.
 
 ## 👥 TEAM - PROMPT PIRATES
 - **Vasu Gambhir** 
-- **Neeraj** 
+- **Neeraj Thazhekuniyil** 
 - **Pranav Somaiah** 
 - **Sibashis Khadanga** 
