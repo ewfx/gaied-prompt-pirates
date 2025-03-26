@@ -89,10 +89,9 @@ Briefly outline the technologies, frameworks, and tools used in development.
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: Next JS
+- 🔹 Backend: FastAPI 
+- 🔹 Other: Gemini API / OCR.Space Api  
 
 ## 👥 TEAM - PROMPT PIRATES
 - **Vasu Gambhir** 
