@@ -33,7 +33,7 @@ This AI-powered system automates loan request classification by:
 📹 [Video Demo](https://drive.google.com/file/d/1cJzaQUNahjcg7BDnBrRkcf41yieNA4_e/view?usp=sharing)
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+![Screenshot 1]([link-to-image](https://drive.google.com/file/d/1VYitGC5BT_L6gEKYQWIva2rFZDAa8Acp/view?usp=sharing))
 
 ## 💡 Inspiration
 Commercial bank lending service teams handle a significant number of servicing requests through emails. These emails contain diverse requests, often with attachments, that must be processed efficiently. Manually classifying and extracting key information from these emails is time-consuming and prone to errors.
