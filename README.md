@@ -44,9 +44,8 @@ Handling customer service emails manually is inefficient and error-prone, especi
 
 This system automates the classification process by assigning **request types and sub-request types** to emails. The extracted information is structured in **JSON format**, making it easily processable by downstream systems. The system also extracts key details such as **confidence score, summary, priority, customer details, and attachment metadata** to improve automation and accuracy.
 
----
 
-## Extracted Fields
+**Extracted Fields**
 
 The system extracts the following key fields from emails:
 
