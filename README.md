@@ -71,15 +71,20 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ewfx/gaied-prompt-pirates.git
    ```
-2. Install dependencies  
+2. Install dependencies 
+- macOS 
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   - npm run setup 
+   ```
+- windows
+  ```sh
+   - npm run win:setup 
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   npm run app
    ```
 
 ## 🏗️ Tech Stack
