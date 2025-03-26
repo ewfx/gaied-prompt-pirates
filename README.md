@@ -1,4 +1,4 @@
-# 🚀 FargoLoanAssist AI – AI-enhanced email management for loan service teams.
+# 🚀 LoanAI Classifier
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
