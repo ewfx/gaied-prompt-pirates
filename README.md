@@ -76,11 +76,11 @@ Describe the major technical or non-technical challenges your team encountered.
 2. Install dependencies 
 - macOS 
    ```sh
-   - npm run setup 
+   npm run setup 
    ```
 - windows
   ```sh
-   - npm run win:setup 
+   npm run win:setup 
    ```
 3. Run the project  
    ```sh
