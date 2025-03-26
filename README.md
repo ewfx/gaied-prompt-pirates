@@ -37,7 +37,7 @@ This AI-powered system automates loan request classification by:
 ## 💡 Inspiration
 Commercial bank lending service teams handle a significant number of servicing requests through emails. These emails contain diverse requests, often with attachments, that must be processed efficiently. Manually classifying and extracting key information from these emails is time-consuming and prone to errors.
 
-Handling customer service emails manually is inefficient and error-prone, especially for **financial institutions** dealing with high email volumes. This project was inspired by the need for **automated email classification**, ensuring accurate categorization and faster processing of service requests.
+This project was inspired by the need for **automated email classification**, ensuring accurate categorization and faster processing of service requests by redirecting to respective team.
 
 
 ## ⚙️ What It Does
