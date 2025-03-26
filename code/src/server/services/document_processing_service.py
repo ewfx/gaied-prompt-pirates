@@ -134,11 +134,38 @@ class EmailProcessor:
                 'attachments': []
             }
             
+            def extract_text_from_part(part):
+                """Extract text content from an email part."""
+                if part.get_content_type() == 'text/plain':
+                    return part.get_content()
+                elif part.get_content_type() == 'text/html':
+                    # convert HTML to plain text if no plain text found
+                    return part.get_content()
+                return ''
+
+            def process_nested_multipart(multipart_msg):
+                """Extract mail body when attachment is present"""
+                body_text = ''
+        
+                for part in multipart_msg.iter_parts():
+                    content_type = part.get_content_type()
+                    
+                    # Check for text parts
+                    if content_type.startswith('text/'):
+                        part_text = extract_text_from_part(part)
+                        if part_text and not body_text:
+                            body_text = part_text
+                    
+                    # Handle nested multipart
+                    elif content_type.startswith('multipart/'):
+                        nested_body = process_nested_multipart(part)
+                        if nested_body and not body_text:
+                            body_text = nested_body
+
+                    return body_text
+
             if msg.is_multipart():
-                for part in msg.iter_parts():
-                    if part.get_content_type() == 'text/plain':
-                        email_data['email_body'] = part.get_content()
-                        break
+                email_data['email_body'] = process_nested_multipart(msg)
             else:
                 email_data['email_body'] = msg.get_content()
             
@@ -173,62 +200,6 @@ class EmailProcessor:
                         logger.error(f"Error processing attachment {attachment_name}: {str(e)}")
             
             return email_data
-            # # Use mailparser for more robust parsing
-            # mail = mailparser.parse_from_file(file_path)
-            
-            # # Basic email metadata
-            # email_data = {
-            #     'subject': mail.subject,
-            #     'from': mail.from_,
-            #     'to': mail.to,
-            #     'date': mail.date,
-            #     'email_body': mail.body,
-            #     'attachments': []
-            # }
-            
-            # # Process attachments if any
-            # if mail.attachments:
-            #     with tempfile.TemporaryDirectory() as temp_dir:
-            #         for attachment in mail.attachments:
-            #             try:
-            #                 attachment_name = attachment.get('filename', 'unnamed_attachment')
-            #                 # logger.info(f"Processing attachment: {attachment_name}")
-            #                 # logger.info(f"Attachment keys: {attachment.keys()}")
-            #                 # logger.info(f"Payload type: {type(attachment.get('payload', None))}")
-            #                 attachment_ext = os.path.splitext(attachment_name)[1].lower().replace('.', '')
-                            
-            #                 # Skip if attachment type not supported
-            #                 if attachment_ext not in self.allowed_attachment_types:
-            #                     logger.warning(f"Skipping unsupported attachment: {attachment_name}")
-            #                     continue
-            #                 logger.info(f"File Payload:")
-                            
-            #                 # Save attachment to temp file
-            #                 temp_attachment_path = os.path.join(temp_dir, attachment_name)
-            #                 #make sure a byte object is used
-            #                 payload = attachment.get('payload', b'')
-            #                 if isinstance(payload, str):
-            #                     payload = payload.encode('utf-8')
-
-            #                 with open(temp_attachment_path, 'wb') as f:
-            #                     f.write(payload)
-            #                 logger.info(f"File Payload:")
-                                
-            #                 # Process attachment based on type
-            #                 process_func = self.allowed_attachment_types.get(attachment_ext)
-            #                 if process_func:
-            #                     attachment_text = process_func(temp_attachment_path)
-                                
-            #                     # Add processed attachment
-            #                     email_data['attachments'].append({
-            #                         'filename': attachment_name,
-            #                         'content_type': attachment.get('mail_content_type', ''),
-            #                         'extracted_text': attachment_text
-            #                     })
-            #             except Exception as e:
-            #                 logger.error(f"Error processing attachment {attachment_name}: {str(e)}")
-            
-            # return email_data
         
         except Exception as e:
             logger.error(f"Error processing .eml file {file_path}: {str(e)}")

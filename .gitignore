@@ -15,6 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+!frontend/ai_email_classifier/src/lib/utils.ts
 lib64/
 parts/
 sdist/
@@ -174,3 +175,5 @@ cython_debug/
 .pypirc
 uploads/
 static/
+.DS_Store
+node_modules/
