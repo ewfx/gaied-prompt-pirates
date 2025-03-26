@@ -35,13 +35,32 @@ This AI-powered system automates loan request classification by:
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+Commercial bank lending service teams handle a significant number of servicing requests through emails. These emails contain diverse requests, often with attachments, that must be processed efficiently. Manually classifying and extracting key information from these emails is time-consuming and prone to errors.
+
+Handling customer service emails manually is inefficient and error-prone, especially for **financial institutions** dealing with high email volumes. This project was inspired by the need for **automated email classification**, ensuring accurate categorization and faster processing of service requests.
+
 
 ## ⚙️ What It Does
-✅ Automates Email Processing → Extracts loan request types, key attributes, and relevant details from emails & attachments.
-✅ Enhances Accuracy → Uses LLM-based classification to improve precision in sorting loan-related emails.
-✅ Speeds Up Response Time → Enables near-instant classification and forwarding to the right department.
-✅ Integrates Seamlessly → Connects with CRM & Loan Management Systems via API for structured data output.
+
+This system automates the classification process by assigning **request types and sub-request types** to emails. The extracted information is structured in **JSON format**, making it easily processable by downstream systems. The system also extracts key details such as **confidence score, summary, priority, customer details, and attachment metadata** to improve automation and accuracy.
+
+---
+
+## Extracted Fields
+
+The system extracts the following key fields from emails:
+
+- **`request_type`** – High-level category of the email request.
+- **`sub_request_type`** – Specific request within the request type.
+- **`confidence_score`** – The model’s confidence level in classification.
+- **`summary`** – A brief summary of the email content.
+- **`priority`** – Urgency level of the request.
+- **`customer_name`** – Name of the customer associated with the request.
+- **`account_number`** – Extracted bank account number (if available).
+- **`loan_id`** – Loan identifier related to the email request.
+- **`date`** – Date mentioned in the email (e.g., due date, request date).
+- **`attachment_details`** – Information about attached documents (e.g., file type, extracted text if OCR is used).
+- **`additional_data`** – Any other relevant extracted details to support processing.
 
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.
