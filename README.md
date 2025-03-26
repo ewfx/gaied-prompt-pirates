@@ -78,7 +78,7 @@ Describe the major technical or non-technical challenges your team encountered.
    npm run setup 
    ```
 - windows
-  ```sh
+   ```sh
    npm run win:setup 
    ```
 3. Run the project  
@@ -93,5 +93,7 @@ Describe the major technical or non-technical challenges your team encountered.
 - 🔹 Other: OpenAI API / Twilio / Stripe
 
 ## 👥 TEAM - PROMPT PIRATES
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Vasu Gambhir** 
+- **Neeraj** 
+- **Pranav Somaiah** 
+- **Sibashis Khadanga** 
