@@ -29,8 +29,8 @@ This AI-powered system automates loan request classification by:
 - ✅ **Seamless Integration** → Connecting with CRM & Loan Management Systems via API for structured data output.
 ## 🎥 Demo
 
-🔗 [Live Demo](#https://drive.google.com/file/d/1cJzaQUNahjcg7BDnBrRkcf41yieNA4_e/view?usp=sharing) (if applicable)  
-📹 [Video Demo](#https://drive.google.com/file/d/1cJzaQUNahjcg7BDnBrRkcf41yieNA4_e/view?usp=sharing) (if applicable)  
+🔗 [Live Demo](https://drive.google.com/file/d/1cJzaQUNahjcg7BDnBrRkcf41yieNA4_e/view?usp=sharing)   
+📹 [Video Demo](https://drive.google.com/file/d/1cJzaQUNahjcg7BDnBrRkcf41yieNA4_e/view?usp=sharing)
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)
