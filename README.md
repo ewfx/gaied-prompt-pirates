@@ -23,10 +23,10 @@ Banks and financial institutions receive thousands of loan service request email
 ## Solution
 This AI-powered system automates loan request classification by:
 
-✅ **Automating Email Processing** → Extracting loan request types, key attributes, and relevant details from emails & attachments.
-✅ **Enhancing Accuracy** → Utilizing LLM-based classification to improve precision in sorting loan-related emails.
-✅ **Speeding Up Response Time** → Enabling near-instant classification and forwarding to the right department.
-✅ **Seamless Integration** → Connecting with CRM & Loan Management Systems via API for structured data output.
+- ✅ **Automating Email Processing** → Extracting loan request types, key attributes, and relevant details from emails & attachments.
+- ✅ **Enhancing Accuracy** → Utilizing LLM-based classification to improve precision in sorting loan-related emails.
+- ✅ **Speeding Up Response Time** → Enabling near-instant classification and forwarding to the right department.
+- ✅ **Seamless Integration** → Connecting with CRM & Loan Management Systems via API for structured data output.
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
 📹 [Video Demo](#) (if applicable)  
