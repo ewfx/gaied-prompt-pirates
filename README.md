@@ -14,7 +14,11 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+This project is a smart email classification system that automates the sorting and categorization of emails based on predefined criteria. It utilizes FastAPI for backend operations and employs a Large Language Model (LLM) to systematically organize emails into structured formats.
+
+The goal of this system is to streamline email processing by automating classification, making it easier for organizations to manage large volumes of incoming messages. Specifically, commercial bank lending service teams receive a significant number of servicing requests via email. These emails often contain diverse requests and attachments, which are ingested into the loan servicing platform to create service requests that go through workflow processing.
+
+This system classifies email content into specific request and sub-request types. The output is structured in a JSON format that includes key fields such as request_type, sub_request_type, confidence_score, summary, and priority. Additionally, the system extracts relevant data from the email and includes it in the JSON response for further processing.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
