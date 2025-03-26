@@ -65,7 +65,9 @@ The system extracts the following key fields from emails:
 Briefly outline the technologies, frameworks, and tools used in development.
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+- **Data Variability & Noise**: Loan-related emails contained a mix of structured, semi-structured, and unstructured text, making it difficult to extract relevant details consistently.
+- **OCR Limitations**: Processing handwritten documents required robust OCR models, but accuracy varied based on document quality.
+- **Model Training & Fine-Tuning**: LLMs needed extensive fine-tuning to correctly classify complex financial terminology and distinguish between similar loan-related requests.
 
 ## 🏃 How to Run
 1. Clone the repository  
