@@ -20,14 +20,15 @@ class LLMService:
 
         generation_config=genai.types.GenerateContentConfig(
         system_instruction=self.get_system_instruction(),
+        response_mime_type='application/json',
         candidate_count=1, # Number of response versions to return
         stop_sequences=['x'],
         max_output_tokens=500,
         temperature=0)
-
-
+        print(self.get_system_instruction())
 
         response = client.models.generate_content(model="gemini-2.0-flash", contents=email_content,config=generation_config)
+
         return response.text
     
     def get_system_instruction(self):
@@ -47,8 +48,6 @@ class LLMService:
         return role+ "\n\n"+context_info
 
 model = LLMService()
-# print(llm._call_gemini("This is a empty email"))
-# print(llm.get_system_instruction())
 
 
 

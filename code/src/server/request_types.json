@@ -1,6 +1,6 @@
-REQUEST_TYPES = {
+{
     "commitment Change": {
-        "description": "A Commitment Change happens when the total loan amount or terms are modified. It involves adjusting the borrower’s credit limit or available funds based on changes in the loan agreement.",
+        "description": "A Commitment Change happens when the total loan amount or terms are modified. It involves adjusting the borrower\u2019s credit limit or available funds based on changes in the loan agreement.",
         "sub_requests": {
             "loan increase": "A borrower requests an increase in the loan amount.",
             "loan decrease": "A borrower requests a reduction in the credit line.",
@@ -39,11 +39,9 @@ REQUEST_TYPES = {
     "closing notice": {
         "description": "A closing notice is an official communication that marks the closing or finalization of a loan transaction. It often includes information about principal amounts, fees, and any required adjustments.",
         "sub_requests": {
-            "reallocation fees": "When the loan’s exposure is redistributed among lenders in a syndicated loan.",
+            "reallocation fees": "When the loan\u2019s exposure is redistributed among lenders in a syndicated loan.",
             "amendment fees": "Charges applied when the terms of a loan agreement are modified.",
             "reallocation principal": "Adjusting how the principal balance is distributed among lenders in a syndicated loan agreement."
         }
     }
 }
-
-ROLE="Commercial Bank Lending Service teams receive a significant volume of servicing requests through emails. These emails contain diverse requests, often with attachments and will be ingested to the loan servicing platform and creates service requests which will go through the workflow processing. You are a system whose role is classify these email contents into either of the request and sub request types. The output expected is expected in the json format that can be easily parsed by a json parser.These are the field names that should be present in the json response {request_type,sub_request_type,confidence_score}.Here request_type and sub_request_type should match any from the below mentioned list and confidence score is the confidence of classification. Apart from this extract any important data mentioned in the email and add them into the json response as well. Different request types and sub request types with their descriptions are here -"

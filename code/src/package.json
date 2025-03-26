@@ -1,0 +1,36 @@
+{
+  "name": "emailclassifier",
+  "version": "1.0.0",
+  "description": "## Initializing python environment:",
+  "main": "index.js",
+  "scripts": {
+    "setup:server": "cd server && python3 -m venv .venv && chmod u+x ./.venv/bin/activate && source ./.venv/bin/activate && pip install -r requirements.txt",
+    "setup:client": "cd frontend && cd ai_email_classifier && npm i",
+    "setup": "npm i && npm run setup:server && npm run setup:client",
+    "build": "cd frontend && cd ai_email_classifier && npm run build",
+    "server": "cd server && source ./.venv/bin/activate && fastapi dev main.py",
+    "client": "npm run build && cd frontend && cd ai_email_classifier && npm start",
+
+    "win:setup:server": "cd server ; python3 -m venv .venv ; .\\.venv\\scripts\\activate ; pip install -r requirements.txt",
+    "win:setup:client": "cd frontend ; cd ai_email_classifier ; npm i",
+    "win:setup": "npm i ; npm run win:setup:server ; npm run win:setup:client",
+    "win:build": "cd frontend ; cd ai_email_classifier ; npm run build",
+    "win:server": "cd server ; .\\.venv\\scripts\\activate ; fastapi dev main.py",
+    "win:client": "cd frontend ; cd ai_email_classifier ; npm start",
+
+    "app": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PranavSomaiah24/Hackathon-GenAI-PromptPirates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PranavSomaiah24/Hackathon-GenAI-PromptPirates/issues"
+  },
+  "homepage": "https://github.com/PranavSomaiah24/Hackathon-GenAI-PromptPirates#readme",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
